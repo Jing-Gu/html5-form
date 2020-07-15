@@ -1,3 +1,39 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid #0369d9 !important;
+}
+
+.form-group.required .col-form-label:after {
+  content: "*";
+  color: red;
+}
+
+small {
+  color: red;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.input-container input {
+  border: 1px solid #fff;
+}
+
+.input-container span {
+  padding: 5px;
+  color: #aaa;
+  cursor: pointer;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .container {

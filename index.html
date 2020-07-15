@@ -18,8 +18,10 @@
     <div class="container">
       <h1 class="display-4 mb-4">Tell Us About Yourself</h1>
       <form action="results.html" method="GET">
-        <div class="form-group row">
-          <label for="firstName" class="col-md-2">First Name</label>
+        <div class="form-group row required">
+          <label for="firstName" class="col-md-2 col-form-label"
+            >First Name</label
+          >
           <input
             type="text"
             id="firstName"
@@ -28,10 +30,13 @@
             class="col-md-2 form-control"
             required
           />
+          <small class="col-md-2">Error message</small>
         </div>
 
-        <div class="form-group row">
-          <label for="lastName" class="col-md-2">Last Name</label>
+        <div class="form-group row required">
+          <label for="lastName" class="col-md-2 col-form-label"
+            >Last Name</label
+          >
           <input
             type="text"
             id="lastName"
@@ -40,21 +45,27 @@
             class="col-md-2 form-control"
             required
           />
+          <small class="col-md-2">Error message</small>
         </div>
 
-        <div class="form-group row">
-          <label for="password" class="col-md-2">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="Password"
-            class="col-md-2 form-control"
-            required
-          />
+        <div class="form-group row required">
+          <label for="password" class="col-md-2 col-form-label">Password</label>
+          <div class="input-container col-md-2 form-control">
+            <input
+              type="password"
+              id="password"
+              name="Password"
+              class="form-control"
+              required
+            />
+            <span class="material-icons visibility">
+              visibility_off
+            </span>
+          </div>
         </div>
 
-        <div class="form-group row">
-          <label for="email" class="col-md-2">Email</label>
+        <div class="form-group row required">
+          <label for="email" class="col-md-2 col-form-label">Email</label>
           <input
             type="email"
             id="email"
@@ -64,8 +75,8 @@
           />
         </div>
 
-        <div class="form-group row">
-          <label for="phone" class="col-md-2">Phone</label>
+        <div class="form-group row required">
+          <label for="phone" class="col-md-2 col-form-label">Phone</label>
           <input
             type="tel"
             id="phone"
@@ -77,12 +88,12 @@
         </div>
 
         <div class="form-group row">
-          <label for="url" class="col-md-2">Website</label>
+          <label for="url" class="col-md-2 col-form-label">Website</label>
           <input type="url" id="url" name="URL" class="col-md-2 form-control" />
         </div>
 
         <div class="form-group row">
-          <label for="age" class="col-md-2">Age</label>
+          <label for="age" class="col-md-2 col-form-label">Age</label>
           <input
             type="number"
             id="age"
@@ -93,8 +104,8 @@
           />
         </div>
 
-        <div class="form-group row">
-          <label for="birthday" class="col-md-2">Birthday</label>
+        <div class="form-group row required">
+          <label for="birthday" class="col-md-2 col-form-label">Birthday</label>
           <input
             type="date"
             id="birthday"
@@ -103,8 +114,10 @@
           />
         </div>
 
-        <div class="form-group row">
-          <label for="gender col-form-label" class="col-md-2">Gender</label>
+        <div class="form-group row required">
+          <label for="gender col-form-label" class="col-md-2 col-form-label"
+            >Gender</label
+          >
           <div class="col-md-2 form-check">
             <input
               type="radio"
@@ -165,12 +178,15 @@
         </div>
 
         <div class="form-group row">
-          <label for="occupation" class="col-md-2">Your occupation</label>
+          <label for="occupation" class="col-md-2 col-form-label"
+            >Your occupation</label
+          >
           <select
             name="Occupation"
             id="occupation"
-            class="col-md-2 form-control"
+            class="col-md-3 form-control"
           >
+            <option value="">--Please choose an option--</option>
             <option value="student">Student</option>
             <option value="doctor">Doctor</option>
             <option value="teacher">Teacher</option>
@@ -238,5 +254,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <!-- customized JS -->
+    <script src="script.js"></script>
   </body>
 </html>
