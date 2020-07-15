@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form styled with Bootstrap4</title>
+    <!-- Bootstrap4 CSS-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>A form for all</h1>
+      <form class="row" action="results.html" method="GET">
+        <div class="col-12">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="First Name"
+            placeholder="John"
+            required
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="Last Name"
+            placeholder="Doe"
+            required
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="Password" required />
+        </div>
+
+        <div class="col-12">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" required />
+        </div>
+
+        <div class="col-12">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="Phone" placeholder="xxx-xxx-xxx" />
+        </div>
+
+        <div class="col-12">
+          <label for="url">Website</label>
+          <input type="url" id="url" name="URL" />
+        </div>
+
+        <div class="col-12">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="Age" min="1" max="200" />
+        </div>
+
+        <div class="col-12">
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="Birthday" />
+        </div>
+
+        <div class="col-12">
+          <label for="gender">Gender</label>
+          <input type="radio" name="Gender" value="male" />Male
+          <input type="radio" name="Gender" value="female" />Female
+          <input type="radio" name="Gender" value="other" />Other
+        </div>
+
+        <div class="col-12">
+          <label>Please select your favorite locations</label><br />
+          <input type="checkbox" name="loc1" value="Paris" />Paris<br />
+          <input type="checkbox" name="loc2" value="London" />London<br />
+          <input type="checkbox" name="loc3" value="Vancouver" />Vancouver<br />
+          <input type="checkbox" name="loc4" value="Tokyo" />Tokyo<br />
+          <input type="checkbox" name="loc5" value="Chicago" />Chicago<br />
+        </div>
+
+        <div class="col-12">
+          <label for="occupation">Your occupation</label>
+          <select name="Occupation" id="occupation">
+            <option value="student">Student</option>
+            <option value="doctor">Doctor</option>
+            <option value="teacher">Teacher</option>
+            <option value="freelancer">Freelancer</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <label for="message">Message</label>
+          <textarea name="Message" id="message" cols="50" rows="4"></textarea>
+        </div>
+
+        <div class="col-12">
+          <label>Select file to upload</label><br />
+          <input type="file" name="New file" />
+        </div>
+
+        <div class="col-12">
+          <label for="color">Choose a color</label>
+          <input type="color" id="color" name="Color" />
+        </div>
+
+        <div class="col-12">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap4 js -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
