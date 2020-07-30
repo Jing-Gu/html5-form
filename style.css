@@ -8,6 +8,11 @@ select:focus {
   border: 1px solid #0369d9 !important;
 }
 
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
 .form-group.required .col-form-label:after {
   content: "*";
   color: red;
